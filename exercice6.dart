@@ -27,6 +27,18 @@ class BaseDeDonnees implements Connectable {
   }
 }
 
+void main() {
+  ServeurAPI api = ServeurAPI();
+  BaseDeDonnees bdd = BaseDeDonnees();
+
+  List<Connectable> services = [api, bdd];
+
+  for (var service in services) {
+    service.connecter("Stephane");
+    service.deconnecter();
+  }
+}
+
 
 
 
