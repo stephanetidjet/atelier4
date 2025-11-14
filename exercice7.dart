@@ -6,3 +6,11 @@ class Tache {
     nombreTotal++;
   }
 }
+
+void main()  {
+  Tache t1 = Tache("Faire les courses");
+  Tache t2 = Tache("Étudier");
+  Tache t3 = Tache("Dormir");
+
+  print(Tache.nombreTotal);
+}
