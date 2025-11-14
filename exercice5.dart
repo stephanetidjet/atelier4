@@ -18,3 +18,26 @@ class Cercle extends Forme {
     return pi * rayon * rayon;
   }
 }
+
+class Rectangle extends Forme {
+  final double longueur;
+  final double largeur;
+
+  Rectangle(this.longueur, this.largeur);
+
+  @override
+  double calculerAire() {
+    return longueur * largeur;
+  }
+}
+
+void main() {
+  Cercle c = Cercle(3.0);
+  Rectangle r = Rectangle(4.0, 5.0);
+
+  c.afficherMessage();
+  print("Aire du cercle : ${c.calculerAire()}");
+
+  r.afficherMessage();
+  print("Aire du rectangle : ${r.calculerAire()}");
+}
