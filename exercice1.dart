@@ -23,3 +23,13 @@ class Couleur {
     print("(R : $r, V : $g, B : $b)");
   }
 }
+
+void main() {
+  Couleur cRouge = Couleur.rouge();
+  Couleur cVert = Couleur.vert();
+  Couleur cBleu = Couleur.bleu();
+
+  cRouge.afficherCouleur();
+  cVert.afficherCouleur();
+  cBleu.afficherCouleur();
+}      
